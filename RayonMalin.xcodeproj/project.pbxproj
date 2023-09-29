@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECDC23EF2AC72F6D0072296D /* RayonMalinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC23EE2AC72F6D0072296D /* RayonMalinApp.swift */; };
+		ECDC23F12AC72F6D0072296D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC23F02AC72F6D0072296D /* ContentView.swift */; };
+		ECDC23F32AC72F7F0072296D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDC23F22AC72F7F0072296D /* Assets.xcassets */; };
+		ECDC23F62AC72F7F0072296D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDC23F52AC72F7F0072296D /* Preview Assets.xcassets */; };
+		ECDC23F82AC72F7F0072296D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC23F72AC72F7F0072296D /* Persistence.swift */; };
+		ECDC23FB2AC72F7F0072296D /* RayonMalin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECDC23F92AC72F7F0072296D /* RayonMalin.xcdatamodeld */; };
+		ECDC24052AC72F7F0072296D /* RayonMalinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC24042AC72F7F0072296D /* RayonMalinTests.swift */; };
+		ECDC240F2AC72F7F0072296D /* RayonMalinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC240E2AC72F7F0072296D /* RayonMalinUITests.swift */; };
+		ECDC24112AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC24102AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECDC24012AC72F7F0072296D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECDC23E32AC72F6C0072296D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDC23EA2AC72F6C0072296D;
+			remoteInfo = RayonMalin;
+		};
+		ECDC240B2AC72F7F0072296D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECDC23E32AC72F6C0072296D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDC23EA2AC72F6C0072296D;
+			remoteInfo = RayonMalin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECDC23EB2AC72F6D0072296D /* RayonMalin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayonMalin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDC23EE2AC72F6D0072296D /* RayonMalinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinApp.swift; sourceTree = "<group>"; };
+		ECDC23F02AC72F6D0072296D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECDC23F22AC72F7F0072296D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECDC23F52AC72F7F0072296D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECDC23F72AC72F7F0072296D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ECDC23FA2AC72F7F0072296D /* RayonMalin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RayonMalin.xcdatamodel; sourceTree = "<group>"; };
+		ECDC24002AC72F7F0072296D /* RayonMalinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayonMalinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDC24042AC72F7F0072296D /* RayonMalinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinTests.swift; sourceTree = "<group>"; };
+		ECDC240A2AC72F7F0072296D /* RayonMalinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayonMalinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDC240E2AC72F7F0072296D /* RayonMalinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinUITests.swift; sourceTree = "<group>"; };
+		ECDC24102AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECDC23E82AC72F6C0072296D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC23FD2AC72F7F0072296D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC24072AC72F7F0072296D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECDC23E22AC72F6C0072296D = {
+			isa = PBXGroup;
+			children = (
+				ECDC23ED2AC72F6D0072296D /* RayonMalin */,
+				ECDC24032AC72F7F0072296D /* RayonMalinTests */,
+				ECDC240D2AC72F7F0072296D /* RayonMalinUITests */,
+				ECDC23EC2AC72F6D0072296D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECDC23EC2AC72F6D0072296D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC23EB2AC72F6D0072296D /* RayonMalin.app */,
+				ECDC24002AC72F7F0072296D /* RayonMalinTests.xctest */,
+				ECDC240A2AC72F7F0072296D /* RayonMalinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECDC23ED2AC72F6D0072296D /* RayonMalin */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC23EE2AC72F6D0072296D /* RayonMalinApp.swift */,
+				ECDC23F02AC72F6D0072296D /* ContentView.swift */,
+				ECDC23F22AC72F7F0072296D /* Assets.xcassets */,
+				ECDC23F72AC72F7F0072296D /* Persistence.swift */,
+				ECDC23F92AC72F7F0072296D /* RayonMalin.xcdatamodeld */,
+				ECDC23F42AC72F7F0072296D /* Preview Content */,
+			);
+			path = RayonMalin;
+			sourceTree = "<group>";
+		};
+		ECDC23F42AC72F7F0072296D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC23F52AC72F7F0072296D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECDC24032AC72F7F0072296D /* RayonMalinTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC24042AC72F7F0072296D /* RayonMalinTests.swift */,
+			);
+			path = RayonMalinTests;
+			sourceTree = "<group>";
+		};
+		ECDC240D2AC72F7F0072296D /* RayonMalinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC240E2AC72F7F0072296D /* RayonMalinUITests.swift */,
+				ECDC24102AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift */,
+			);
+			path = RayonMalinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECDC23EA2AC72F6C0072296D /* RayonMalin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDC24142AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalin" */;
+			buildPhases = (
+				ECDC23E72AC72F6C0072296D /* Sources */,
+				ECDC23E82AC72F6C0072296D /* Frameworks */,
+				ECDC23E92AC72F6C0072296D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayonMalin;
+			productName = RayonMalin;
+			productReference = ECDC23EB2AC72F6D0072296D /* RayonMalin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECDC23FF2AC72F7F0072296D /* RayonMalinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDC24172AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalinTests" */;
+			buildPhases = (
+				ECDC23FC2AC72F7F0072296D /* Sources */,
+				ECDC23FD2AC72F7F0072296D /* Frameworks */,
+				ECDC23FE2AC72F7F0072296D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDC24022AC72F7F0072296D /* PBXTargetDependency */,
+			);
+			name = RayonMalinTests;
+			productName = RayonMalinTests;
+			productReference = ECDC24002AC72F7F0072296D /* RayonMalinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECDC24092AC72F7F0072296D /* RayonMalinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDC241A2AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalinUITests" */;
+			buildPhases = (
+				ECDC24062AC72F7F0072296D /* Sources */,
+				ECDC24072AC72F7F0072296D /* Frameworks */,
+				ECDC24082AC72F7F0072296D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDC240C2AC72F7F0072296D /* PBXTargetDependency */,
+			);
+			name = RayonMalinUITests;
+			productName = RayonMalinUITests;
+			productReference = ECDC240A2AC72F7F0072296D /* RayonMalinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECDC23E32AC72F6C0072296D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					ECDC23EA2AC72F6C0072296D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					ECDC23FF2AC72F7F0072296D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = ECDC23EA2AC72F6C0072296D;
+					};
+					ECDC24092AC72F7F0072296D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = ECDC23EA2AC72F6C0072296D;
+					};
+				};
+			};
+			buildConfigurationList = ECDC23E62AC72F6C0072296D /* Build configuration list for PBXProject "RayonMalin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECDC23E22AC72F6C0072296D;
+			productRefGroup = ECDC23EC2AC72F6D0072296D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECDC23EA2AC72F6C0072296D /* RayonMalin */,
+				ECDC23FF2AC72F7F0072296D /* RayonMalinTests */,
+				ECDC24092AC72F7F0072296D /* RayonMalinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECDC23E92AC72F6C0072296D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDC23F62AC72F7F0072296D /* Preview Assets.xcassets in Resources */,
+				ECDC23F32AC72F7F0072296D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC23FE2AC72F7F0072296D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC24082AC72F7F0072296D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECDC23E72AC72F6C0072296D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDC23F82AC72F7F0072296D /* Persistence.swift in Sources */,
+				ECDC23FB2AC72F7F0072296D /* RayonMalin.xcdatamodeld in Sources */,
+				ECDC23F12AC72F6D0072296D /* ContentView.swift in Sources */,
+				ECDC23EF2AC72F6D0072296D /* RayonMalinApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC23FC2AC72F7F0072296D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDC24052AC72F7F0072296D /* RayonMalinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC24062AC72F7F0072296D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDC24112AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift in Sources */,
+				ECDC240F2AC72F7F0072296D /* RayonMalinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECDC24022AC72F7F0072296D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDC23EA2AC72F6C0072296D /* RayonMalin */;
+			targetProxy = ECDC24012AC72F7F0072296D /* PBXContainerItemProxy */;
+		};
+		ECDC240C2AC72F7F0072296D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDC23EA2AC72F6C0072296D /* RayonMalin */;
+			targetProxy = ECDC240B2AC72F7F0072296D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECDC24122AC72F7F0072296D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECDC24132AC72F7F0072296D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECDC24152AC72F7F0072296D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RayonMalin/Preview Content\"";
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECDC24162AC72F7F0072296D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RayonMalin/Preview Content\"";
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECDC24182AC72F7F0072296D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayonMalin.app/RayonMalin";
+			};
+			name = Debug;
+		};
+		ECDC24192AC72F7F0072296D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayonMalin.app/RayonMalin";
+			};
+			name = Release;
+		};
+		ECDC241B2AC72F7F0072296D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RayonMalin;
+			};
+			name = Debug;
+		};
+		ECDC241C2AC72F7F0072296D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorismarhuenda.RayonMalinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RayonMalin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECDC23E62AC72F6C0072296D /* Build configuration list for PBXProject "RayonMalin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDC24122AC72F7F0072296D /* Debug */,
+				ECDC24132AC72F7F0072296D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDC24142AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDC24152AC72F7F0072296D /* Debug */,
+				ECDC24162AC72F7F0072296D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDC24172AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDC24182AC72F7F0072296D /* Debug */,
+				ECDC24192AC72F7F0072296D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDC241A2AC72F7F0072296D /* Build configuration list for PBXNativeTarget "RayonMalinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDC241B2AC72F7F0072296D /* Debug */,
+				ECDC241C2AC72F7F0072296D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECDC23F92AC72F7F0072296D /* RayonMalin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECDC23FA2AC72F7F0072296D /* RayonMalin.xcdatamodel */,
+			);
+			currentVersion = ECDC23FA2AC72F7F0072296D /* RayonMalin.xcdatamodel */;
+			path = RayonMalin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECDC23E32AC72F6C0072296D /* Project object */;
+}
