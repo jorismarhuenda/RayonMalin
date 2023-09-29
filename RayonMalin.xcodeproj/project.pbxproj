@@ -16,6 +16,7 @@
 		ECDC24052AC72F7F0072296D /* RayonMalinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC24042AC72F7F0072296D /* RayonMalinTests.swift */; };
 		ECDC240F2AC72F7F0072296D /* RayonMalinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC240E2AC72F7F0072296D /* RayonMalinUITests.swift */; };
 		ECDC24112AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC24102AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift */; };
+		ECDC241E2AC737E90072296D /* SortingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC241D2AC737E90072296D /* SortingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		ECDC240A2AC72F7F0072296D /* RayonMalinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayonMalinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDC240E2AC72F7F0072296D /* RayonMalinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinUITests.swift; sourceTree = "<group>"; };
 		ECDC24102AC72F7F0072296D /* RayonMalinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayonMalinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECDC241D2AC737E90072296D /* SortingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				ECDC23EE2AC72F6D0072296D /* RayonMalinApp.swift */,
 				ECDC23F02AC72F6D0072296D /* ContentView.swift */,
+				ECDC241D2AC737E90072296D /* SortingView.swift */,
 				ECDC23F22AC72F7F0072296D /* Assets.xcassets */,
 				ECDC23F72AC72F7F0072296D /* Persistence.swift */,
 				ECDC23F92AC72F7F0072296D /* RayonMalin.xcdatamodeld */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDC23F82AC72F7F0072296D /* Persistence.swift in Sources */,
+				ECDC241E2AC737E90072296D /* SortingView.swift in Sources */,
 				ECDC23FB2AC72F7F0072296D /* RayonMalin.xcdatamodeld in Sources */,
 				ECDC23F12AC72F6D0072296D /* ContentView.swift in Sources */,
 				ECDC23EF2AC72F6D0072296D /* RayonMalinApp.swift in Sources */,

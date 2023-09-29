@@ -6,83 +6,82 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    @State private var groceryList = [
+        GroceryItem(name: "Pommes", aisle: "Fruits", type: "Fruit", isMarked: false),
+        GroceryItem(name: "Pain", aisle: "Boulangerie", type: "Pain", isMarked: false),
+        GroceryItem(name: "Lait", aisle: "Produits laitiers", type: "Dairy", isMarked: false),
+        GroceryItem(name: "Fromage", aisle: "Produits laitiers", type: "Dairy", isMarked: false),
+        // Ajoute d'autres articles ici
+    ]
+    @State private var selectedSorting = SortingOption.byName 
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            NavigationView {
+                List {
+                    ForEach($groceryList) { $item in
+                        GroceryItemRow(item: $item)
                     }
+                    .onDelete(perform: deleteItem)
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+                .navigationTitle("Liste de Courses")
+                .navigationBarItems(
+                    leading: NavigationLink(destination: SortingView(selectedSorting: $selectedSorting)) {
+                        Image(systemName: "arrow.up.arrow.down.circle")
+                    },
+                    trailing: EditButton()
+                )
             }
         }
-    }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+    private func deleteItem(at offsets: IndexSet) {
+        groceryList.remove(atOffsets: offsets)
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+struct GroceryItemRow: View {
+    @Binding var item: GroceryItem
+
+    var body: some View {
+        HStack {
+            Text(item.name)
+                .font(.headline)
+            Spacer()
+            Text(item.aisle)
+                .foregroundColor(.gray)
+        }
+        .padding(8)
+        .background(item.isMarked ? Color.gray.opacity(0.5) : Color.clear)
+        .cornerRadius(8)
+        .contextMenu {
+            Button(action: {
+                markItem()
+            }) {
+                HStack {
+                    Image(systemName: item.isMarked ? "checkmark.square.fill" : "square")
+                    Text(item.isMarked ? "Masquer" : "Marquer")
+                }
+            }
+        }
+    }
+
+    private func markItem() {
+        // Inverse l'état du marquage de l'article
+        item.isMarked.toggle()
+    }
+}
+
+struct GroceryItem: Identifiable {
+    var id = UUID()
+    var name: String
+    var aisle: String
+    var type: String
+    var isMarked: Bool
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
